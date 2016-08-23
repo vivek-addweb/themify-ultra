@@ -1,0 +1,83 @@
+/*
+HEADER MENU SPLIT
+================================================ */
+/* header menu split header */
+#header {
+	padding: 115px 0 15px;
+}
+
+/* header menu split site logo */
+#site-logo {
+	margin: 0;
+}
+#site-logo a {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* header menu split main nav */
+#main-nav-wrap {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+}
+#main-nav li {
+	vertical-align: middle;
+}
+
+#main-nav .has-mega-sub-menu .mega-sub-menu {
+	top: auto;
+}
+
+/* social widget & search */
+.social-widget {
+	margin-bottom: 1em;
+}
+#searchform-wrap {
+	margin-bottom: 1em;
+}
+
+/* transparent header */
+.transparent-header #header {
+	color: #fff;
+}
+.transparent-header #header a {
+	color: #fff;
+}
+.transparent-header #main-nav ul a {
+	color: #484848;
+}
+.transparent-header #main-nav ul a:hover {
+	color: #000;
+}
+
+/* header menu split fixed header */
+#headerwrap.fixed-header {
+	min-height: 55px;
+}
+#headerwrap.fixed-header #main-nav-wrap {
+	position: static;
+}
+#headerwrap.fixed-header #site-logo a {
+	display: inline-block;
+	line-height: 1em;
+}
+#headerwrap.fixed-header #header,
+#headerwrap.fixed-header #site-logo a {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+	.header-menu-split #headerwrap #main-nav-wrap {
+		position: static;
+	}
+	.header-menu-split #headerwrap.fixed-header {
+		min-height: 55px;
+	}
+	.header-menu-split #headerwrap.fixed-header #header {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}

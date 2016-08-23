@@ -1,0 +1,66 @@
+/*
+BOXED CONTENT
+================================================ */
+.boxed-content {
+	background-color: #ddd;
+}
+.pagewidth {
+	width: 100%;
+}
+.themify_builder_row .row_inner {
+	width: 90%;
+	margin: auto;
+}
+#pagewrap {
+	width: 1234px;
+	margin: 0 auto;
+	position: relative;
+	max-width: 95%;
+}
+#headerwrap,
+#footerwrap {
+	background: none !important;
+	border: none;
+	box-shadow: none;
+}
+#header {
+	padding: 1em 0 2em;
+}
+#body {
+	background-color: #fff;
+	padding: 3.15%;
+}
+.full_width #body {
+	padding: 0; /* remove padding if full_width content */
+}
+#content,
+#sidebar {
+	padding: 0;
+}
+.full_width #content {
+	padding: 0;
+}
+
+/* prevent transparent-header breaking boxed-content */
+.transparent-header #headerwrap {
+	position: static;
+}
+
+.footer-horizontal-left .back-top,
+.footer-horizontal-right .back-top,
+.footer-left-col .back-top,
+.footer-right-col .back-top {
+	left: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+	.boxed-content #pagewrap {
+		max-width: 95%;
+	}
+	.boxed-content #headerwrap #header {
+		max-width: 100%;
+	}
+	.boxed-content #pagewrap #body {
+		margin-top: 15px;
+	}
+}
